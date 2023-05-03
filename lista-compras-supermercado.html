@@ -14,34 +14,35 @@
     <body class="imagem">
         <h1>Lista de compras do supermercado!</h1>
         <form class="texto">
-          <label for="item">Item:</label>
+          <label for="item">Item:  </label>
           <input type="text" id="item" name="item" required>
           <br>
-          <label for="categoria">Categoria:</label>
+          <label for="categoria">Categoria:  </label>
           <select id="categoria" name="categoria" required>
             <option value="">Selecione uma categoria</option>
-            <option value="Açougue">Açougue</option>
-            <option value="Bebida">Bebida</option>
-            <option value="Congelado">Congelado</option>
-            <option value="Doce">Doce</option>
-            <option value="Enlatado">Enlatado</option>
-            <option value="Frios">Frios</option>
-            <option value="Grão">Grão</option>
-            <option value="Higiene">Higiene</option>
-            <option value="Hortifruit">Hortifruit</option>
-            <option value="Laticínio">Laticínio</option>
-            <option value="Limpeza">Limpeza</option>
-            <option value="Massa">Massa</option>
-            <option value="Padaria">Padaria</option>
-            <option value="Salgado">Salgado</option>
-            <option value="Tempero">Tempero</option>          
+            <option value="Açougue">🥩 Açougue</option>
+            <option value="Bebida">🥛 Bebida</option>
+            <option value="Congelado">🍟 Congelado</option>
+            <option value="Doce">🍩 Doce</option>
+            <option value="Enlatado">🥫 Enlatado</option>
+            <option value="Frios">🧀 Frios</option>
+            <option value="Grão">🫘 Grão</option>
+            <option value="Higiene">🧻 Higiene</option>
+            <option value="Hortifruit">🍒 Hortifruit</option>
+            <option value="Laticínio">🍶 Laticínio</option>
+            <option value="Limpeza">🧼 Limpeza</option>
+            <option value="Massa">🍜 Massa</option>
+            <option value="Padaria">🍞 Padaria</option>
+            <option value="Salgado">🥐 Salgado</option>
+            <option value="Tempero">🧄 Tempero</option>          
           </select>
           <br>
-          <input class="adicionar" type="submit" value="Adicionar">
+          <input id="adicionar" type="submit" value="Adicionar">
         </form>
         <br>
         <h2>Lista de compras:</h2>
         <ul id="lista"></ul>
+        <div id="valor-total"></div>
 
         <script src="js/lista-compras-supermercado.js"></script>
     </body>

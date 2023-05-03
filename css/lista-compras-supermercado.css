@@ -11,21 +11,22 @@ body {
 
 h1 {
     margin-top: 60px;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
+    text-decoration: underline;
 }
 
 .texto {
-    margin-top: 20px;
-    font-size: 40px;
+    margin-top: 15px;
+    font-size: 10px;
     font-weight: bold;
     text-align: center;
 }
 
 label {
-    margin-top: 30px;
-    font-size: 35px;
+    margin-top: 15px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -35,7 +36,8 @@ option, select {
     font-weight: bold;
 }
 
-input {
+#item {
+    width: 200px;
     background: white;
     margin-top: 30px;
     font-size: 20px;
@@ -44,32 +46,60 @@ input {
     cursor: pointer;
 }
 
-.adicionar:hover {
-    background: rgb(255, 55, 55);
+#categoria {
+    width: 230px;
+    background: white;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+    padding: 6px;
+}
+
+#adicionar {
+    width: 140px;
+    background: white;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#adicionar:hover {
     transform: scale(1.2);
 }
 
-.adicionar:active {
+#adicionar:active {
     border-color: rgb(0, 0, 0);
+}
+
+input {
+    width: 80px;
+    background: white;
+    margin: 5px 5px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    transition: 1s all;
+    cursor: pointer;
 }
 
 h2 {
     color: red;
     margin: 20px 0px 20px 0px;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     text-align: center;
+    -webkit-text-stroke: 1px black;
+    text-decoration: underline;
 }
 
 li {
-
-    font-size: 35px;
-    text-align: center;
-}
-
-ul {
-    margin: 0px 0px 20px 20px;
+    margin: 10px 10px;
     font-size: 25px;
+    text-align: center;
     font-weight: bold;
     text-align: center;
 }
@@ -82,7 +112,6 @@ button {
 }
 
 button:hover {
-    background: rgb(255, 55, 55);
     transform: scale(1.2);
 }
 
@@ -90,5 +119,9 @@ button:active {
     border-color: rgb(0, 0, 0);
 }
 
-
-
+#valor-total {
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
